@@ -116,3 +116,13 @@ for (let num = 1; num <= 100; num++) {
     console.log(num + " Odd");
   }
 }
+
+//for each loops...
+function getscore(...score){
+  let total=0;
+  score.forEach(function(score){
+    total+=score;
+  });
+  console.log(total);
+}
+getscore(1,2,3,4,5);
