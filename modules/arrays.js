@@ -62,3 +62,66 @@ let abc=ar10.sort(function(a,b){
 console.log(abc);
 
 
+//map..
+let e1 = [1,2,3,4,5,6,7,8,9,10];
+
+let e2 = e1.map(function(val) {
+  return 12;
+});
+console.log(e2);
+
+
+
+let e3 = [12,34,56,78,92,10];
+
+let e4 = e3.map(function(val) {
+  if(val>10){ return val};
+});
+console.log(e4);
+
+//filter..
+let e5 = [1,2,3,4,5,6,7,8];
+let e6 = e5.filter(function(val){
+ if(val>4) return true;
+});
+console.log(e6);
+
+//reduce..
+let e7 = [1,2,3,4,5,6,7,8];
+let e8 = e7.reduce(function(a,b){
+  return a+b;
+});
+console.log(e8);
+
+
+//find..
+let e9 = [1,2,3,4,5,6,7,8];
+let e10 = e9.find(function(val){
+  return val>4;
+});
+console.log(e10);
+
+//some..
+let e11 = [1,2,3,4,5,6,7,8];
+let e12 = e11.some(function(val){
+  return val>4;
+});
+console.log(e12);
+
+//every..
+let e13 = [1,2,3,4,5,6,7,8];
+let e14 = e13.every(function(val){
+  return val>4;
+});
+console.log(e14);
+
+//spread operator..
+let e15 = [1,2,3,4,5,6,7,8];
+let e16 = [9,10,11,12,13,14,15,16];
+let e17 = [...e15,...e16];
+console.log(e17);
+
+//destructuring..
+let e18 = [1,2,3,4,5,6,7,8];
+let [a,b, ,d, ,f, ,h]=e18;
+console.log(a,b,d,f,h);

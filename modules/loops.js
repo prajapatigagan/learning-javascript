@@ -126,3 +126,11 @@ function getscore(...score){
   console.log(total);
 }
 getscore(1,2,3,4,5);
+
+
+
+
+let arrr=[23,34,54,78,45];
+arrr.forEach(function(valu){
+  console.log(valu);
+});
